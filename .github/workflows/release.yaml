@@ -1,5 +1,8 @@
 name: Build LaTeX document
-on: [push]
+on:
+  push:
+    tags:
+      - "v*.*.*"
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -15,3 +18,9 @@ jobs:
         with:
           name: PDF
           path: Skript.pdf
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: Skript.pdf
+
+          
