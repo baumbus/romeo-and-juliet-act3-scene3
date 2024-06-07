@@ -2,6 +2,7 @@
 
 \usepackage[T1]{fontenc}
 \usepackage{libertine}
+\usepackage{fancyhdr}
 
 \newcommand{\brepl}[1]{\repl{\bf #1}}
 \newcommand{\bcast}[1]{\cast{\bf #1}}
@@ -27,6 +28,13 @@
 \bcast{Romeo Montague}{A broke man who is in love with Juliet who works at a her father's casino as a dealer.}
 \bcast{Friar Lawrence}{A lawyer and the uncle of Juliet.}
 \bcast{Angelica}{A friend of Juliet who is also working in the casino as a server.}
+
+\newscenenamed{Props}
+
+\begin{itemize}
+    \item wine glas
+    \item gun
+\end{itemize}
 
 \newactnamed{Prologue}
 
@@ -62,7 +70,7 @@ The world is a big place, you need not constrict your life to this place.
 \talkromeo
 This is my life! There's nothing out there for me except pain and torture!
 
-\stagedir{\lawrence sighs}
+\stagedir{\lawrence\ sighs}
 
 \talklawrence
 Youngster, do you not know the value of life? Be thankful the verdict was only banishment.
@@ -70,7 +78,7 @@ Youngster, do you not know the value of life? Be thankful the verdict was only b
 \talkromeo
 Be thankful? You rob me access to this heaven on earth and you believe I should be thankful? Heaven is where Juliet is, all that awaits me out there is hell! You are but a cruel businessman, how would you know of true love!
 
-\stagedir{\romeo stands up facing \lawrence}
+\stagedir{\romeo\ stands up facing \lawrence}
 
 \talklawrence
 Now listen here young man!
@@ -82,97 +90,114 @@ La La La La La
 Oh stop being such a child! Think Romeo, think!
 
 \talkromeo
-Oh, you're just going to talk about banishment again.
+Think?! Think?! Can thinking creat a Juliet out of thin air?! Can it move a building?! Can it undo my banishment?!
+
+\stagedir{\romeo\ stands up again and faces \lawrence}
 
 \talklawrence
-I'll give you the armor to fend off the effects of banishment. I'll give you a soothing balm for your struggle, a rational word to comfort you, despite your banishment.
+So not only are you mad, but you are also deaf.
 
 \talkromeo
-Still talking about banishment? Go hang up your “rational” armor on the wall! Unless it can make another Juliet to go with me, or uproot Verona to where I'll be, or reverse the Prince's decision — if if your rationality can't do any of these things, then it's useless. Say no more.
+What is to listen, when the wise man is blind.
+
+\stagedir{\lawrence\ takes a deep breath}
 
 \talklawrence
-Then I see that madmen have no ears to listen.
+Let us all calm down for a moment and review the situation.
 
 \talkromeo
-Why should they, when wise men have no eyes to see things as they are?
+You don't know the situation! You can't know the situation! Think yourself in my shoes for once! Do you have the slightest idea what I'm going through?! If you knew, you would understand the agony I'm going through.
+
+\stagedir{\angelica\ knocks on the door}
 
 \talklawrence
-Let me explain to you how your situation doesn't have to be so terrible.
+Quick, someone's here, hide under the desk.
 
 \talkromeo
-You can't talk about what you don't feel. If you were this young, you were in love with Juliet, you were just married hours ago, you were the murderer of Tybalt, and you were as hopelessly in love as I am and banished like me, then you could talk about it. Then you could tear your hair out in despair and fall over like I am now, on the ground stretched out as if for a new grave.
+No! I won't hide away any longer!
+
+\stagedir{Knocking}
 
 \talklawrence
-Get up. Someone's knocking at the door. Good Romeo, hide yourself.
+Ack! You fool! - Who's there? - Go hide, Romeo! - Be right there!
 
-\talkromeo
-I can't hide, unless perhaps I'm shrouded from sight in the mist of my own heartsick groans.
+\stagedir{Knocking}
 
-\talklawrence
-Listen, they're knocking urgently! \stagedir{To outside} Who's there? \stagedir{To Romeo} Romeo, you have to get up, you'll be arrested. \stagedir{To outside} Wait one moment!  \stagedir{To Romeo} Stand up. Run to my office. \stagedir{To outside} Just a minute! \stagedir{To Romeo} By God, how can you act so stupid! I'm coming, I'm coming! Who is it that's knocking so hard? Where are you coming from? What do you want?
+Hide. Under. The. Desk!
+
+Coming! - Just listen to me and hide Romeo!
 
 \talkangelica
-Let me come in, and I'll tell you what I'm doing. I've come from Lady Juliet.
+It's me Angelica, friend of Juliet.
 
 \talklawrence
-Welcome, then.
+Come in.
+
+\stagedir{Opens door \\ Enter \angelica}
 
 \talkangelica
-Oh holy friar, oh, tell me holy friar, where is my lady's husband, where's Romeo?
+Romeo! Where is he?!
 
 \talklawrence
-He's lying there on the ground, drunk on his own tears.
+
+\stagedir{Points towards the desk}
+
+There on the ground. Wallowing in despair.
 
 \talkangelica
-Oh, he's just like Juliet is now, just like her! Oh what similar misery! What a pitiful predicament!
+Ugh, these two, truly a match made in heaven.
 
-She's lying down just like that, blubbering and weeping, weeping and blubbering. Stand up, stand up! Be a man for Juliet's sake, for her sake get up and stand! Why are you falling into such a deep groan?
+\stagedir{Walks over to \romeo\ and kicks him on the side}
+
+Are you not man enough to even stand up yourself? What would Juliet think if she saw you now.
 
 \talkromeo
-Nurse!
+Argh!
+
+\stagedir{He rises}
 
 \talkangelica
-Ah sir! Ah sir! Well, death is everyone's end.
+Welcome back to the world of the living.
 
 \talkromeo
-Were you talking about Juliet? How is she?
-
-Does she think I'm a murderer now that I've stained the innocent infancy of our love with her own family's blood? Where is she? And how is she doing? And what does my hidden wife say about our ruined love?
+Did you say Juliet? Is she disgusted by actions? Where is she? Is she ok? What does she say to the end of our love?
 
 \talkangelica
-Oh, she doesn't say anything, sir, she just weeps and weeps. She'll fall on her bed, and then bolt up and cry “Tybalt”, then cry about Romeo, and finally fall back down again.
+She's being a drama queen, just like you.
 
 \talkromeo
-Oh, it's as if my name was shot from a gun and murdered her, just like the hand that belongs to my name murdered her family. Oh friar, tell me which part of my body contains my name? Tell me so that I may hack off the place where that name dwells.
+Oh it must pain her so to hear my name, the name of a filthy cheater. If so then I must erase this name from existence!
+
+\stagedir{Pulls out a gun from under the desk, \angelica\ quickly holds down his arms \\ \lawrence\ manage to get the gun out of \romeo's hands}
 
 \talklawrence
-Stop, don't give in to desperation. Are you a man? You look like one, but your tears are more fit for a woman and your wild actions are only fit for the irrational fury of some beast.
+You absolute buffoon! You idiot! You unreasonable beast! What the fuck are you thinking!
 
-How shameful to have these womanly qualities in someone who appears to be a man. Or even worse, how shameful to seem like you're half man and half wild animal. You've astonished me. I swear by my holy order of friars, I didn't think you were this unstable. Did you kill Tybalt? Are you going to kill yourself? And would you kill your wife — who's living for you — by committing sinful suicide? Why are you trying to shame your family and heaven and the earth? They had to come together to create your life, and you would throw that all away in a second!
+\stagedir{\lawrence\ stows the gun away}
 
-You are bringing shame to your body, your love, and your intellect. You have so much potential in all these things, but you want to get rid of them rather than use them correctly, like a rich man who would rather lend money than work an honest trade. You're abusing your body, your love, and your wit. Your body is just like the wax form of a man without the virtue of a real person. Your marriage vows are like lies under sworn oath since you're trying to kill yourself and the love you vowed to uphold. Your intelligence, which should enhance your body and your love, has been warped by the way it's managed both of them. Now your intellect is like powder in the loaded gun of an unskilled soldier, going off due to its owner's ignorance and maiming what it should protect.
+I am disappointed, I expected more of you. You wanted to kill yourself, because of what? Because you cheated in my casino? Because you might never see Juliet again? Will you use your goddamn mind for even a second you absolute buffoon? Oh for goodness' sake.
 
-Come on, take heart, man! Your Juliet, for whom you were just now about to kill yourself, is alive. For that you are fortunate. Tybalt wanted to kill you, but you slew Tybalt, and you're fortunate there as well. The law that would have condemned you to death has been much friendlier to you, and that punishment was turned into exile, which is fortunate, too. You've got a whole pack of blessings resting on you, and happiness woos you, but you're behaving like a sullen girl by pouting about your bad luck and your love. Watch out, for people like you will be miserable all their lives. Go, get yourself to your love, like you agreed, and climb into her room and comfort her.
+\stagedir{\lawrence\ takes a large sip of water}
 
-But make sure you leave before the town watchmen go to their posts, for then you won't be able to flee Verona for Mantua. You can live in Mantua until we can find a time to make your marriage public, reconcile your friends with each other, beg the Prince's pardon, and call you back with twenty thousand times more joy than you had sorrow when you left. Lead the way, nurse. Pay my respects to Juliet, and tell her to go quickly home to bed, which I'm sure her intense sorrow will lead her to do anyway. Tell her Romeo is coming.
+If you truly wanted to die, you wouldn't have come here to me. So tell me, do you truly with to die?
 
-\talkangelica
-Oh Lord, I could have stayed here all night long hearing such good advice. What a smart man. My lord, I'll tell my lady Juliet that you will come to her.
+\stagedir{\romeo\ looks away}
 
-\talkromeo
-Do so, and tell my dear to prepare to criticize me for what I've done.
+If you truly love her, then go to her, comfort her, reconcile with her. Here, I can help, I could marry the two of you officially, maybe then we can put all this behind us.
 
 \talkangelica
-Here, sir, I have a ring that she told me to give you, sir. Hurry, be quick, as it's getting really late.
+Oh god bless you Friar. I'll go tell Juliet that Romeo's coming.
+
+\stagedir{\angelica\ exits}
 
 \talkromeo
-Oh I'm so relieved by all of this!
+Oh thank you Friar, I don't know how I could ever thank you.
+
+\stagedir{Vigorously shakes \lawrence's hand}
 
 \talklawrence
-Be off and good night. Romeo, here's your situation: either be gone before they set the watch tonight, or sneak out in disguise at daybreak. Stay in Mantua. I'll find your servant, and from time to time, I'll have him bring news to you of anything that bodes well for you here in Verona. Let me shake your hand, it's late. Farewell and goodnight.
+Now go, Romeo, go to her.
 
-\talkromeo
-If I weren't called to a joy beyond all other joys, I would be sad to leave you after such a brief visit. Farewell.
-
+\stagedir{\romeo\ exits}
 
 \end{document}
